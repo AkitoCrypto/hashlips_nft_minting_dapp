@@ -129,8 +129,7 @@ function App() {
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
-    blockchain.smartContract.methods
-      .mint(mintAmount)
+    blockchain.smartContract.methods.publicMint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -162,8 +161,8 @@ function App() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 10) {
-      newMintAmount = 10;
+    if (newMintAmount > 2) {
+      newMintAmount = 2;
     }
     setMintAmount(newMintAmount);
   };
