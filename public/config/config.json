@@ -11,7 +11,7 @@
   "MAX_SUPPLY": 999,
   "WEI_COST": 6000000000000000,
   "DISPLAY_COST": 0.006,
-  "GAS_LIMIT": 285000,
+  "GAS_LIMIT": 130000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
   "SHOW_BACKGROUND": true
