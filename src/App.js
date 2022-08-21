@@ -138,13 +138,13 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
+        setFeedback("Sorry, something went wrong please try again.");
         setClaimingNft(false);
       })
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `Successfully minted ${CONFIG.NFT_NAME}! Check your wallet.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
