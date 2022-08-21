@@ -99,7 +99,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [feedback, setFeedback] = useState(`Mint your Street Cats Genesis.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -127,7 +127,7 @@ function App() {
     let totalGasLimit = String(gasLimit * mintAmount);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
-    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
+    setFeedback(`Minting...`);
     setClaimingNft(true);
     blockchain.smartContract.methods.publicMint(mintAmount)
       .send({
@@ -262,14 +262,13 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
+                   {CONFIG.DISPLAY_COST}{" "} ETH each. 2 per tx.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  Gas is optimized by ERC721A
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -291,7 +290,7 @@ function App() {
                         getData();
                       }}
                     >
-                      CONNECT
+                      Connect
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
@@ -359,7 +358,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                        {claimingNft ? "Minting" : "Mint"}
                       </StyledButton>
                     </s.Container>
                   </>
@@ -385,8 +384,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet).Gas is optimized by ERC721A smart contract.
+            Powered by StreetLabs in Nyc.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription

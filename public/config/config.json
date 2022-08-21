@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x8465db98712e56d807884285257633e39129e1ff",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x8465db98712e56d807884285257633e39129e1ff",
+  "CONTRACT_ADDRESS": "0xa3bd4fB69eBAc0B23fe60d032b241A88Ae543ef6",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0xa3bd4fB69eBAc0B23fe60d032b241A88Ae543ef6",
   "NETWORK": {
     "NAME": "rinkeby",
     "SYMBOL": "Ethereum",
     "ID": 4
   },
-  "NFT_NAME": "HaGOD",
-  "SYMBOL": "HG",
+  "NFT_NAME": "Street Cats Genesis",
+  "SYMBOL": "SCG",
   "MAX_SUPPLY": 999,
   "WEI_COST": 6000000000000000,
   "DISPLAY_COST": 0.006,
   "GAS_LIMIT": 130000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
-  "SHOW_BACKGROUND": true
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/stormspirit",
+  "SHOW_BACKGROUND": false
 }
