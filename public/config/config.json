@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xa3bd4fB69eBAc0B23fe60d032b241A88Ae543ef6",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0xa3bd4fB69eBAc0B23fe60d032b241A88Ae543ef6",
+  "CONTRACT_ADDRESS": "0xBaA813b529aaee34175093da545160aF17bfdAE5",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0xBaA813b529aaee34175093da545160aF17bfdAE5",
   "NETWORK": {
     "NAME": "rinkeby",
     "SYMBOL": "Ethereum",
     "ID": 4
   },
-  "NFT_NAME": "Street Cats Genesis",
-  "SYMBOL": "SCG",
+  "NFT_NAME": "NekoDaigaku",
+  "SYMBOL": "NEDA",
   "MAX_SUPPLY": 999,
-  "WEI_COST": 6000000000000000,
-  "DISPLAY_COST": 0.006,
-  "GAS_LIMIT": 130000,
-  "MARKETPLACE": "Opeansea",
+  "WEI_COST": 3000000000000000,
+  "DISPLAY_COST": 0.003,
+  "GAS_LIMIT": 150000,
+  "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/stormspirit",
   "SHOW_BACKGROUND": false
 }
