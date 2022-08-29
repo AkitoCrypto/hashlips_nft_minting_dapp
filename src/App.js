@@ -393,7 +393,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            We are the street ghosts of web3.
+            Snapshot will be taken 1 hour after sold out
           </s.TextDescription>
         </s.Container>
       </s.Container>
