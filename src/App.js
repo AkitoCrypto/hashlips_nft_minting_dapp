@@ -384,7 +384,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Powered by StreetLabs in Nyc.
+            Powered by ZorionStudio in Nyc.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
