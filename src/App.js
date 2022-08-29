@@ -384,7 +384,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Powered by ZorionStudio in Nyc.
+             Mode = Daigaku, get the fuck rid of dicks/pepes/shits, ready for real pumps
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
