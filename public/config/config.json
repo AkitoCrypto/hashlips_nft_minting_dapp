@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0xBaA813b529aaee34175093da545160aF17bfdAE5",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0xBaA813b529aaee34175093da545160aF17bfdAE5",
+  "CONTRACT_ADDRESS": "0xda1428c35f9bbe613191ef15995413ff95c3bc22",
+  "SCAN_LINK": "https://etherscan.io/address/0xda1428c35f9bbe613191ef15995413ff95c3bc22",
   "NETWORK": {
-    "NAME": "rinkeby",
+    "NAME": "Ethereum",
     "SYMBOL": "Ethereum",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "NekoDaigaku",
   "SYMBOL": "NEDA",
