@@ -384,7 +384,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-             Mode = Daigaku. NO MORE dicks/pepes/shits, ready for real pumps
+             The first cross Ethereum(PoW/PoS) utility pfp collection.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
@@ -393,7 +393,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Snapshot will be taken 1 hour after sold out
+            Breed your TMC by staking TMCM. Earn ETH(PoW) by evolving your TMC.
           </s.TextDescription>
         </s.Container>
       </s.Container>
