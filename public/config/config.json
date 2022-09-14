@@ -6,8 +6,8 @@
     "SYMBOL": "Ethereum",
     "ID": 1
   },
-  "NFT_NAME": "NekoDaigaku",
-  "SYMBOL": "NEDA",
+  "NFT_NAME": "TheMergeCat",
+  "SYMBOL": "TMC",
   "MAX_SUPPLY": 2222,
   "WEI_COST": 5000000000000000,
   "DISPLAY_COST": 0.005,

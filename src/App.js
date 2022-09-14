@@ -262,7 +262,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                   {CONFIG.DISPLAY_COST}{" "} ETH each. max 3 per tx.
+                   {CONFIG.DISPLAY_COST}{" "} ETH each. max 4 per tx.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
