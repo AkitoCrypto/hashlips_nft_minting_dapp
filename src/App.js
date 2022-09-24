@@ -99,7 +99,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Twitter @themergecat`);
+  const [feedback, setFeedback] = useState(`Twitter @nekosensei_nft`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -160,9 +160,9 @@ function App() {
   };
 
   const incrementMintAmount = () => {
-    let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 4) {
-      newMintAmount = 4;
+    let newMintAmount = mintAmount + 9;
+    if (newMintAmount > 10) {
+      newMintAmount = 10;
     }
     setMintAmount(newMintAmount);
   };
@@ -262,7 +262,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                   {CONFIG.DISPLAY_COST}{" "} ETH each. max 4 per tx.
+                   {CONFIG.DISPLAY_COST}{" "} ETH each. max 10 per tx, first 300 free, max 1 per tx.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
@@ -384,7 +384,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-             The first cross Ethereum(PoW/PoS) utility pfp collection.
+             2800 total supply. The first 300 is free, max 1 per px. Rest 0.001 each, max 10 per tx.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
@@ -393,7 +393,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Breed your TMC by staking TMCM. Earn ETH(PoW) by evolving your TMC.
+            At timestamp 1664042400, the rest of tokens that are not sold will be burned.
           </s.TextDescription>
         </s.Container>
       </s.Container>
