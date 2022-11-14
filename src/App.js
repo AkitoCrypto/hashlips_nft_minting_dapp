@@ -99,7 +99,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Twitter @sbf_bsc`);
+  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -124,12 +124,13 @@ function App() {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
-    let totalGasLimit = String(gasLimit);
+    let totalGasLimit = String(gasLimit * mintAmount);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
-    setFeedback(`Minting...`);
+    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
-    blockchain.smartContract.methods.publicMint(mintAmount)
+    blockchain.smartContract.methods
+      .mint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -138,13 +139,13 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again.");
+        setFeedback("Sorry, something went wrong please try again later.");
         setClaimingNft(false);
       })
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `Successfully minted ${CONFIG.NFT_NAME}! Check your wallet.`
+          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -160,7 +161,7 @@ function App() {
   };
 
   const incrementMintAmount = () => {
-    let newMintAmount = mintAmount + 9;
+    let newMintAmount = mintAmount + 1;
     if (newMintAmount > 10) {
       newMintAmount = 10;
     }
@@ -262,13 +263,14 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                   {CONFIG.DISPLAY_COST}{" "} ETH each. max 10 per wallet.
+                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                   First one is free if you mint from contract. DO NOT TRUST, VERIFY.
+                  Excluding gas fees.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -290,7 +292,7 @@ function App() {
                         getData();
                       }}
                     >
-                      Connect
+                      CONNECT
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
@@ -358,7 +360,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "Minting" : "Mint"}
+                        {claimingNft ? "BUSY" : "BUY"}
                       </StyledButton>
                     </s.Container>
                   </>
@@ -384,7 +386,9 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-             ROADMAP: Buy myself a McDonald, take a private jet and leave The Bahamas
+            Please make sure you are connected to the right network (
+            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
+            Once you make the purchase, you cannot undo this action.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
@@ -393,7 +397,9 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            MAKE FTX GREAT AGAIN. More scammers will be invited to the club soon.
+            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
+            successfully mint your NFT. We recommend that you don't lower the
+            gas limit.
           </s.TextDescription>
         </s.Container>
       </s.Container>

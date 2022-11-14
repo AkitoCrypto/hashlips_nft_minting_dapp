@@ -1,8 +1,8 @@
 :root {
-  --primary: rgb(0, 0, 0);
-  --primary-text: #fdfdfd;
-  --secondary: rgb(0, 0, 0);
+  --primary: #ebc908;
+  --primary-text: #1a1a1a;
+  --secondary: #ff1dec;
   --secondary-text: #ffffff;
-  --accent: rgb(68, 68, 68);
+  --accent: #505050;
   --accent-text: #ffffff;
 }
