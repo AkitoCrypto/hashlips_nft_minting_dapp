@@ -270,7 +270,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Twitter @sbf_bsc.
+                  Twitter @bsc_sbf.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
