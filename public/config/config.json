@@ -3,13 +3,13 @@
   "SCAN_LINK": "https://goerli.etherscan.io/address/0xeb1c03b4311ff320008a44190f153cbf0477ce8e3",
   "NETWORK": {
     "NAME": "goerli",
-    "SYMBOL": "goerli",
+    "SYMBOL": "GoerliETH",
     "ID": 5
   },
   "NFT_NAME": "Billionaire Scammers Club",
   "SYMBOL": "BSC",
   "MAX_SUPPLY": 5555,
-  "WEI_COST": 5000000000000000,
+  "WEI_COST": 1000000000000000,
   "DISPLAY_COST": 0.001,
   "GAS_LIMIT": 200000,
   "MARKETPLACE": "Opensea",
