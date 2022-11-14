@@ -386,7 +386,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Billionaire Scammers Club is created by Sam Bankrupt Fired. Roadmap is to buy a McDonald. WE WILL Invite Zhu Su, Do Kwon and other scammers to the club.
+            Billionaire Scammers Club is created by Sam Bankrupt Fired. Create this project to buy SBF a McDonald. Zhu Su, Do Kwon and other scammers will be invited to the club.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
