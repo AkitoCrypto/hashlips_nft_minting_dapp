@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x8288B388FCF94E06fA051DE9B67ab24C348C3DC3",
-  "SCAN_LINK": "https://etherscan.io/address/0x8288B388FCF94E06fA051DE9B67ab24C348C3DC3",
+  "CONTRACT_ADDRESS": "0xeb1c03b4311ff320008a44190f153cbf0477ce8e3",
+  "SCAN_LINK": "https://goerli.etherscan.io/address/0xeb1c03b4311ff320008a44190f153cbf0477ce8e3",
   "NETWORK": {
-    "NAME": "Ethereum",
-    "SYMBOL": "Ethereum",
-    "ID": 1
+    "NAME": "goerli",
+    "SYMBOL": "goerli",
+    "ID": 5
   },
-  "NFT_NAME": "TheMergeCat",
-  "SYMBOL": "TMC",
-  "MAX_SUPPLY": 2222,
+  "NFT_NAME": "Billionaire Scammers Club",
+  "SYMBOL": "BSC",
+  "MAX_SUPPLY": 5555,
   "WEI_COST": 5000000000000000,
-  "DISPLAY_COST": 0.005,
-  "GAS_LIMIT": 160000,
+  "DISPLAY_COST": 0.001,
+  "GAS_LIMIT": 200000,
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "",
-  "SHOW_BACKGROUND": false
+  "SHOW_BACKGROUND": true
 }
