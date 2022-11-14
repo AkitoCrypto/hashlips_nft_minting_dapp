@@ -395,8 +395,8 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            After mint out, a vote will be hosted and BSC NFT owners will vote to decide the fate of other scammers.
-            1$FTTS = 1$FTTS, fuck $BNB
+            A vote will be hosted and BSC NFT owners will vote to decide the fate of other scammers.
+            1$FTTS = 1$FTTS, FUCK SHITCOINS LIKE $FTT AND $BNB
           </s.TextDescription>
         </s.Container>
       </s.Container>
