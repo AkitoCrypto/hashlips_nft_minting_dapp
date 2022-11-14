@@ -396,7 +396,7 @@ function App() {
             }}
           >
             SBF scammer is the genesis scammer collection. Zhu Su, Do Kwon and other scammers NFT will be airdropped to the holders in the future.
-            1$FTTS = 1$FTTS, FUCK SHITCOINS LIKE $FTT AND $BNB and fuck this scam web3 world
+            1$FTTS = 1$FTTS, FUCK SHITCOINS LIKE $FTT AND $BNB and fuck this scam web3 world.
           </s.TextDescription>
         </s.Container>
       </s.Container>
