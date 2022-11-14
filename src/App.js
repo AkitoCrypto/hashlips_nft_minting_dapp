@@ -386,7 +386,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Billionaire Scammers Club is created by Sam Bankrupt Fired to fuck those rich blockchain scammers. SBF scammer is the genesis scammer collection. Zhu Su, Do Kwon and other scammers NFT will be airdropped to the holders in the future.
+            Billionaire Scammers Club is created by Sam Bankrupt Fired to fuck those rich blockchain scammers.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
@@ -395,8 +395,8 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            A vote will be hosted and BSC NFT owners will vote to decide the fate of other scammers.
-            1$FTTS = 1$FTTS, FUCK SHITCOINS LIKE $FTT AND $BNB
+            SBF scammer is the genesis scammer collection. Zhu Su, Do Kwon and other scammers NFT will be airdropped to the holders in the future.
+            1$FTTS = 1$FTTS, FUCK SHITCOINS LIKE $FTT AND $BNB and fuck this scam web3 world
           </s.TextDescription>
         </s.Container>
       </s.Container>
