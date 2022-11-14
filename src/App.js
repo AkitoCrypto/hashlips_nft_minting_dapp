@@ -99,7 +99,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`First Free if mint from contract, rest 0.001 each, max 10 per Tx`);
+  const [feedback, setFeedback] = useState(`First one Free if mint from contract, rest 0.001 each, max 10 per Tx`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -270,7 +270,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  Twitter @sbf_bsc.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -360,7 +360,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "MINTING" : "mint SBF_BSC"}
+                        {claimingNft ? "MINTING" : "mint"}
                       </StyledButton>
                     </s.Container>
                   </>
