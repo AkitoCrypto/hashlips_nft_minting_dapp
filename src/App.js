@@ -99,7 +99,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [feedback, setFeedback] = useState(`First Free if mint from contract, rest 0.001 each, max 10 per Tx`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -161,7 +161,7 @@ function App() {
   };
 
   const incrementMintAmount = () => {
-    let newMintAmount = mintAmount + 1;
+    let newMintAmount = mintAmount + 9;
     if (newMintAmount > 10) {
       newMintAmount = 10;
     }
@@ -360,7 +360,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                        {claimingNft ? "MINTING" : "mint SBF_BSC"}
                       </StyledButton>
                     </s.Container>
                   </>
@@ -386,9 +386,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            Billionaire Scammers Club is created by Sam Bankrupt Fired. Roadmap is to buy myself a McDonald and invite ZhuSu, Do Kown and other scammers to the club.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
@@ -397,9 +395,8 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
+            After mint out, a vote will be hosted and BSC NFT owners will vote to decide the fate of other scammers.
+            1$FTTS = 1$FTTS, fuck $BNB
           </s.TextDescription>
         </s.Container>
       </s.Container>
