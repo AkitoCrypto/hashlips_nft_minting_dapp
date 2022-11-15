@@ -2,7 +2,7 @@
   "CONTRACT_ADDRESS": "0xE62886DD75bCF5475f58696a38e8212c374c0fD0",
   "SCAN_LINK": "https://etherscan.io/address/0xe62886dd75bcf5475f58696a38e8212c374c0fd0",
   "NETWORK": {
-    "NAME": "etherscan",
+    "NAME": "ethereum",
     "SYMBOL": "ETH",
     "ID": 1
   },
