@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0x3534b7fb084f0B10e5B48b0501f743cD14c6b181",
-  "SCAN_LINK": "https://goerli.etherscan.io/address/0x3534b7fb084f0B10e5B48b0501f743cD14c6b181",
+  "CONTRACT_ADDRESS": "0xE62886DD75bCF5475f58696a38e8212c374c0fD0",
+  "SCAN_LINK": "https://etherscan.io/address/0xe62886dd75bcf5475f58696a38e8212c374c0fd0",
   "NETWORK": {
-    "NAME": "goerli",
+    "NAME": "etherscan",
     "SYMBOL": "ETH",
-    "ID": 5
+    "ID": 1
   },
   "NFT_NAME": "Billionaire Scammers Club",
   "SYMBOL": "BSC",
